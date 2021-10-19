@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curvy Pages</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            color: beige;
+            background: #202731;
+            overflow-x: hidden;
+        }
+        section {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 400px;
+            padding: 100px 20vw;
+        }
+        .blue {
+            background: #3c31dd;
+        }
+        .red {
+            background: #dd3f31;
+        }
+        .pink {
+            background: #ff0066;
+        }
+        .dark {
+            background: #0f0f10;
+        }
+        .curve {
+            position: absolute;
+            height: 225px;
+            width: 100%;
+            bottom: 0;
+        }
+        .curve::before {
+            content: '';
+            display: block;
+            position: absolute;
+            border-radius: 100% 50%;
+            height: 100%;
+            width: 55%;
+            background-color: #0f0f10;
+            /* background-color: green; */
+            transform: translate(85%, 60%);
+        }
+        .curve::after {
+            content: '';
+            display: block;
+            position: absolute;
+            border-radius: 100% 50%;
+            height: 100%;
+            width: 55%;
+            background-color: #dd3f31;
+            /* background-color: purple; */
+            transform: translate(-4%, 40%);
+            z-index: 1;
+        }
+        /* wave from https://www.shapedivider.app/ */
+        .wave {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
+
+        .wave svg {
+            position: relative;
+            display: block;
+            width: calc(118% + 1.3px);
+            height: 123px;
+        }
+
+        .wave .shape-fill {
+            fill: #3c31dd;;
+        }
+    </style>
+</head>
+<body>
+    <section class="blue">
+        <h1>Nice Curves</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nihil tenetur illum hic autem odio quas modi, velit ducimus vel tempore commodi dignissimos nulla, aliquam cum incidunt in asperiores dolorum!</p>
+        <!-- <div class="curve"></div> -->
+    </section>
+    <section class="dark">
+        <!-- https://www.shapedivider.app/ -->
+        <h1>Nice Curves</h1>
+        <p>Architecto vero, ratione maiores iure, minima aliquid explicabo magnam, vel voluptatibus odio placeat porro? Maxime tempore illo, assumenda voluptas tenetur molestias, quaerat sunt at ut accusamus iure. Deleniti, error a.</p>
+        <div class="wave">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+    <section class="red">
+        <h1>Nice Curves</h1>
+        <p>Expedita dicta cum quod ex vel earum eaque, voluptas veritatis culpa, at, sapiente odit distinctio sint assumenda. Sint debitis dignissimos ab tempora dolore assumenda alias doloribus. Exercitationem deserunt voluptatem error.</p>
+        <div class="curve"></div>
+        </section>
+    <section class="dark">
+        <h1>Nice Curves</h1>
+        <p>Labore quod officia, eveniet quisquam nesciunt impedit harum voluptate pariatur quas porro consequuntur repellat consequatur cumque adipisci est id, voluptatibus voluptatem maxime quaerat ab velit magni ad atque neque. Dignissimos.</p>
+        <!-- <div class="curve"></div> -->
+    </section>
+    <section class="pink">
+        <h1>Nice Curves</h1>
+        <p>Labore soluta dolorum debitis sapiente alias tenetur, inventore corporis, libero numquam rem aspernatur voluptate ex ad, voluptatem possimus officiis deserunt sequi perspiciatis iste enim. Repellendus, reiciendis veritatis! Rem, dolorem recusandae.</p>
+        <!-- <div class="curve"></div> -->
+    </section>
+    <section class="dark">
+        <h1>Nice Curves</h1>
+        <p>Alias veritatis praesentium magnam illum delectus autem necessitatibus placeat repudiandae nobis deleniti omnis suscipit provident officiis deserunt eos, assumenda perspiciatis id maiores esse modi nesciunt error. Fuga iste tempore mollitia.</p>
+        <!-- <div class="curve"></div> -->
+    </section>
+    <section class="red">
+        <h1>Nice Curves</h1>
+        <p>Libero itaque, laudantium quaerat soluta eligendi laborum praesentium neque. Officia, corporis officiis aliquam molestiae ut saepe illo dolorum incidunt nisi inventore iusto atque. Minus quaerat est ad voluptas natus placeat!</p>
+        <!-- <div class="curve"></div> -->
+    </section>
+    <section class="pink">
+        <h1>Nice Curves</h1>
+        <p>Aliquam cumque est eligendi dignissimos minima, nisi libero repellendus molestiae deleniti itaque et neque, non magnam consectetur tenetur iste esse eaque iure voluptatem ipsa similique, accusamus odit numquam. Quos, quibusdam?</p>
+        <!-- <div class="curve"></div> -->
+    </section>
+</body>
+</html>
